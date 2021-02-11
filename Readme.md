@@ -1,1 +1,5 @@
-This Repository contains templates for Nodejs and React projects.
+# React Template
+
+<Button>
+    <a href="https://github.com/orelhassid/Templates/archive/React.zip">Download The Template</a>
+<Button>
