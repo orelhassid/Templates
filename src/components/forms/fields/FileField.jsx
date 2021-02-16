@@ -1,4 +1,4 @@
-import { Box, makeStyles } from "@material-ui/core";
+import { Box, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { Button } from "../../UI";
 import FieldWrapper from "./FieldWrapper";
@@ -38,7 +38,24 @@ export default function FileField(props) {
             onDone={({ base64 }) => handleChange(base64)}
           ></FileBase>
         </Button>
+        <Button
+          variant="text"
+          component="label"
+          onClick={() => onChange({ target: { name, value: "" } })}
+        >
+          Reset
+        </Button>
       </Box>
+      {value && (
+        <Box
+          my={1}
+          style={{
+            background: `url(${value}) no-repeat left center`,
+            backgroundSize: "contain",
+            height: 200,
+          }}
+        ></Box>
+      )}
     </FieldWrapper>
   );
 }

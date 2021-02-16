@@ -40,13 +40,13 @@ export default function FormFieldsCheck() {
         },
       ],
     },
-    // {
-    //   type: "file",
-    //   name: "image",
-    //   label: "Upload Image",
-    //   placeholder: "placeholder",
-    //   help: "help",
-    // },
+    {
+      type: "file",
+      name: "image",
+      label: "Upload Image",
+      placeholder: "placeholder",
+      help: "help",
+    },
   ];
 
   const schema = React.useMemo(
@@ -54,6 +54,7 @@ export default function FormFieldsCheck() {
       Joi.object({
         name: Joi.string(),
         select: Joi.string(),
+        image: Joi.string(),
       }),
     []
   );
