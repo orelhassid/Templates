@@ -2,12 +2,15 @@ import React from "react";
 import { TextField as MUITextField } from "@material-ui/core";
 
 export default function TextField({ field, value, onChange, error }) {
-  const { label, multiline, labelSub, className, name, help } = field;
+  const { label, name, help } = field;
+
+  console.log("value", value);
 
   return (
     <MUITextField
       fullWidth
       id={name}
+      name={name}
       label={label}
       value={value}
       onChange={onChange}

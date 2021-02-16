@@ -9,6 +9,7 @@ export default function FormFieldsCheck() {
   });
 
   const onSubmit = async () => {
+    console.log("formState", formState);
     try {
     } catch (error) {}
   };
@@ -39,13 +40,13 @@ export default function FormFieldsCheck() {
         },
       ],
     },
-    {
-      type: "file",
-      name: "image",
-      label: "Upload Image",
-      placeholder: "placeholder",
-      help: "help",
-    },
+    // {
+    //   type: "file",
+    //   name: "image",
+    //   label: "Upload Image",
+    //   placeholder: "placeholder",
+    //   help: "help",
+    // },
   ];
 
   const schema = React.useMemo(
