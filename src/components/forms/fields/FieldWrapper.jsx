@@ -3,7 +3,13 @@ import { Box, Typography } from "@material-ui/core";
 import React from "react";
 import useStyles from "./styles";
 
-export default function FieldWrapper({ field, error, children, hideLabel }) {
+export default function FieldWrapper({
+  field,
+  error,
+  children,
+  hideLabel,
+  hideFooter,
+}) {
   const { label, help, name } = field;
   const classes = useStyles();
 
@@ -21,7 +27,7 @@ export default function FieldWrapper({ field, error, children, hideLabel }) {
         </Typography>
       )}
 
-      {error ? (
+      {!hideFooter && error ? (
         <Typography classes={{ root: classes.error }}>{error}</Typography>
       ) : (
         <Typography classes={{ root: classes.help }}>{help}</Typography>

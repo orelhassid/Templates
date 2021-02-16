@@ -2,7 +2,6 @@ import { Box, makeStyles } from "@material-ui/core";
 import React from "react";
 import { Button } from "../../UI";
 import FieldWrapper from "./FieldWrapper";
-import Input from "./Input";
 import FileBase from "react-file-base64";
 
 // import { useDropzone } from "react-dropzone";
@@ -43,11 +42,3 @@ export default function FileField(props) {
     </FieldWrapper>
   );
 }
-// <MUITextField></MUITextField>
-// <Input field={field} onChange={onChange} value={value}></Input>
-// <Box>
-//   <Button variant="text" component="label">
-//     Upload File
-//     <input type="file" hidden onChange={onChange} value={value} />
-//   </Button>
-// </Box>

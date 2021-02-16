@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, SEO, Header, Content, Footer } from "../components/layout";
 import { APP } from "../config/index";
 import { ReactComponent as PortfolioImage } from "../assets/images/portfolio-amico.svg";
-import { Box, Container, Grid } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 
 export default function Home() {
   return (

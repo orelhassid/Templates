@@ -4,15 +4,12 @@ import LoginIcon from "@material-ui/icons/VpnKey";
 import LogoutIcon from "@material-ui/icons/ExitToApp";
 import ProfileIcon from "@material-ui/icons/Person";
 import UsersIcon from "@material-ui/icons/Group";
-import NewProjectIcon from "@material-ui/icons/NewReleases";
 import {
   RT_LOGIN,
   RT_PROFILE,
   RT_LOGOUT,
-  RT_NEW_PROJECT,
   RT_USERS,
-  RT_DEMO,
-  RT_DEMO_ROOM,
+  RT_LAB,
 } from "../../../../config/routes";
 export function getCommonLinks(user) {
   return [
@@ -37,23 +34,10 @@ export function getCommonLinks(user) {
       // skip: !user?.isAuth,
     },
     {
-      label: "Demo",
-      to: RT_DEMO,
-      // icon: <RoomIcon />,
-      skip: user?.isAuth,
+      label: "Lab",
+      to: RT_LAB,
+      // skip: !user?.isAuth,
     },
-    {
-      label: "Room",
-      to: RT_DEMO_ROOM,
-      // icon: <RoomIcon />,
-      skip: !user?.isAuth,
-    },
-    // {
-    //   label: "New Project",
-    //   to: RT_NEW_PROJECT,
-    //   icon: <NewProjectIcon />,
-    //   skip: !user?.isAuth,
-    // },
   ];
 }
 

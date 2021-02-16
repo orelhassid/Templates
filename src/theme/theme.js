@@ -61,9 +61,9 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
-    ".InputBase-input": {
-      backgroundColor: BG_INPUT,
-    },
+    // ".InputBase-input": {
+    //   backgroundColor: BG_INPUT,
+    // },
 
     MuiCssBaseline: {
       "@global": {
@@ -74,13 +74,13 @@ const theme = createMuiTheme({
         },
         "@font-face": [asap],
         body: {},
-        input: {
-          border: "none",
-          outline: "none",
-        },
-        "input:-webkit-autofill": {
-          WebkitBoxShadow: "red",
-        },
+        // input: {
+        //   border: "none",
+        //   outline: "none",
+        // },
+        // "input:-webkit-autofill": {
+        //   WebkitBoxShadow: "red",
+        // },
       },
     },
   },

@@ -2,6 +2,7 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import { TextField } from "../fields";
 import FileField from "../fields/FileField";
+import SelectField from "../fields/SelectField";
 
 export default function Fields({
   fields,
@@ -32,6 +33,16 @@ export default function Fields({
       case "file":
         return (
           <FileField
+            field={field}
+            value={value}
+            error={error}
+            onChange={onChange}
+            {...rest}
+          />
+        );
+      case "select":
+        return (
+          <SelectField
             field={field}
             value={value}
             error={error}

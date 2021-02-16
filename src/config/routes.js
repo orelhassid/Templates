@@ -10,8 +10,7 @@ export const RT_NEW_PROJECT = "/new/project";
 export const RT_LOGIN = "/login";
 export const RT_LOGOUT = "/logout";
 export const RT_USERS = "/users";
-export const RT_DEMO = "/demo";
-export const RT_DEMO_ROOM = "/demo/room";
+export const RT_LAB = "/lab";
 
 export const RT_ACCOUNT = "/user/settings/account";
 export const RT_PREFERENCES = "/user/settings/preferences";

@@ -1,4 +1,4 @@
-import { makeStyles, fade } from "@material-ui/core/styles";
+import { makeStyles, fade, withStyles } from "@material-ui/core/styles";
 import { BG_INPUT, FONTS, ALIGN } from "../../../theme/config";
 
 const padding = "5px 10px 10px 16px";
@@ -52,5 +52,21 @@ export default makeStyles((theme) => ({
       color: theme.palette.primary.main,
       fontWeight: 600,
     },
+  },
+}));
+
+export const CustomizeInput = withStyles((theme) => ({
+  root: {
+    backgroundColor: BG_INPUT,
+    // padding: "14px 16px",
+    // paddingTop: theme.spacing(2),
+    paddingInlineStart: theme.spacing(2),
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+    borderRadius: theme.shape.borderRadius,
+    color: theme.palette.text.primary,
+    // fontSize: 16,
+    margin: 0,
+    fontFamily: FONTS.join(","),
   },
 }));

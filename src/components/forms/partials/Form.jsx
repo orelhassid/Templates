@@ -3,7 +3,6 @@ import { Grid, Box, Typography, Container } from "@material-ui/core";
 import Fields from "./Fields";
 import { Button } from "../../UI";
 import useStyles from "../fields/styles";
-import Joi from "joi";
 
 export default function Form({
   fields,
