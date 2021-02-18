@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Redirect, Route, useLocation } from "react-router-dom";
-import { RT_LOGIN } from "../config/routes";
+import { RT_LOGIN } from "../config";
 import { UserContext } from "../contexts/UserContext";
 
 const ProtectedRoute = ({ component: Component, ...rest }) => {

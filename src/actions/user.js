@@ -1,7 +1,6 @@
 import { USER } from "../config";
 import { FETCH, LOGOUT, UPDATE } from "../config/actionsTypes";
 import * as api from "../api/user";
-import * as apiRoom from "../api/room";
 
 export const loginUser = (user) => async (dispatch) => {
   const payload = mapUserObject(user);
@@ -46,24 +45,6 @@ export const logoutUser = () => (dispatch) => {
 export const updateUser = (user) => async (dispatch) => {
   try {
     dispatch({ type: UPDATE, payload: user });
-  } catch (error) {
-    console.error(error);
-    throw error;
-  }
-};
-
-export const loginRoom = (room) => async (dispatch) => {
-  try {
-    const { data } = await apiRoom.loginRoom(room);
-
-    dispatch({
-      type: FETCH,
-      payload: {
-        ...data.room,
-        token: data.token,
-        isAuth: true,
-      },
-    });
   } catch (error) {
     console.error(error);
     throw error;

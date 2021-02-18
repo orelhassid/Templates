@@ -1,15 +1,29 @@
-// import RalewayWoff2 from './fonts/Raleway-Regular.woff2';
-import Asap from "../assets/fonts/Asap-Regular.ttf";
+import CustomFontRegular from "../assets/fonts/Rubik/Rubik-Regular.ttf";
+import CustomFontMedium from "../assets/fonts/Rubik/Rubik-Medium.ttf";
 
-export const asap = {
-  fontFamily: "Asap",
+export const Font = {
+  fontFamily: "CustomFont",
   fontStyle: "normal",
   fontDisplay: "swap",
   fontWeight: 400,
   src: `
-    local('Asap'),
-    local('Asap-Regular'),
-    url(${Asap}) format('woff2')
+    local('CustomFont'),
+    local('CustomFont-Regular'),
+    url(${CustomFontRegular}) format('woff2')
+  `,
+  unicodeRange:
+    "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF",
+};
+
+export const FONT_MEDIUM = {
+  fontFamily: "CustomFontMedium",
+  fontStyle: "normal",
+  fontDisplay: "swap",
+  fontWeight: 500,
+  src: `
+    local('CustomFontMedium'),
+    local('CustomFont-Medium'),
+    url(${CustomFontMedium}) format('woff2')
   `,
   unicodeRange:
     "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF",

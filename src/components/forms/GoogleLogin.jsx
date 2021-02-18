@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import { GoogleLogin } from "react-google-login";
 import { useHistory } from "react-router-dom";
 import { loginUser } from "../../actions/user";
-import { GOOGLE_CLIENT_ID } from "../../config";
-import { RT_PROFILE } from "../../config/routes";
+import { GOOGLE_CLIENT_ID, RT_PROFILE } from "../../config";
 import { UserContext } from "../../contexts/UserContext";
 import { Button } from "../UI";
 const GoogleAuth = () => {

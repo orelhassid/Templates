@@ -2,19 +2,21 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import {
   PRIMARY,
   BORDER_RADIUS,
-  BG_INPUT,
   FONTS,
   TEXT_PRIMARY,
   TEXT_SECONDARY,
 } from "./config";
-import { asap } from "./fonts";
+import { Font, FONT_MEDIUM } from "./fonts";
 
 const theme = createMuiTheme({
   typography: {
     fontFamily: FONTS.join(","),
 
     h1: {
-      fontSize: "4rem",
+      fontSize: "3.5rem",
+      fontWeight: 500,
+      fontFamily: "CustomFontMedium",
+      padding: 0,
     },
     h4: {
       fontSize: "1.5rem",
@@ -72,15 +74,9 @@ const theme = createMuiTheme({
           height: "fit-content",
           // fontFamily: FON,
         },
-        "@font-face": [asap],
+        "@font-face": [Font],
+        "@font-face": [FONT_MEDIUM],
         body: {},
-        // input: {
-        //   border: "none",
-        //   outline: "none",
-        // },
-        // "input:-webkit-autofill": {
-        //   WebkitBoxShadow: "red",
-        // },
       },
     },
   },

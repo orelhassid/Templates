@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 import React from "react";
 import { ALIGN } from "../../../theme/config";
 import useStyles from "./styles";
@@ -7,7 +7,7 @@ export default function Header({ title, subtitle, direction }) {
   const classes = useStyles();
 
   return (
-    <Container component="header" classes={{ root: classes.container }}>
+    <Box component="header" classes={{ root: classes.container }}>
       <Box textAlign={direction || ALIGN}>
         <Typography
           variant="h1"
@@ -20,7 +20,7 @@ export default function Header({ title, subtitle, direction }) {
           {subtitle}
         </Typography>
       </Box>
-    </Container>
+    </Box>
   );
 }
 

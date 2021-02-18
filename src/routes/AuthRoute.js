@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Redirect, Route, useHistory, useLocation } from "react-router-dom";
-import { RT_LOGIN, RT_PROFILE } from "../config/routes";
+import { RT_LOGIN, RT_PROFILE } from "../config";
 import { UserContext } from "../contexts/UserContext";
 
 const AuthRoute = ({ component: Component, ...rest }) => {
